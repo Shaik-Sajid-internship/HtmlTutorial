@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Programming Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="canvas.css"/>
+	<style>
+	div.container{
+	    width:100%;
+	    border:1px solid black;
+	    font-size:20px;
+	}
+    header,footer{
+	padding:1px;
+	color:white;
+	background-color:green;
+	text-align:center;
+	clear:left;
+	}
+	nav{
+	float:left;
+	width:20%;
+	margin:0;
+	padding:2px;
+	background-color:white;
+	}
+	nav ul{
+	list-style-type:none;
+	padding:2px;
+	}
+	nav ul a{
+	text-decoration:none;
+	display:block;
+	}
+	nav ul a:hover{
+	background-color:blue;
+	color:white;
+	}
+	section{
+	padding:10px;
+	overflow:hidden;
+	}
+	</style>
+</head>
+<body>
+<div class="container">
+	 <header>
+	      <h1>HTML PROGRAMMING TUTORIAL</<h1>
+		  <h5>HTML,CSS,Javascript,SQL</h5>
+		  <h6>Home||About US||Contact Us</h6>
+	 </header>
+	 <nav>
+	      <ul>
+		      <li><a href="introduction.html" target="_blank">HTML Introduction</a></li>
+			  <li><a href="syntax.html" target="_blank">HTML Syntax</a></li>
+			  <li><a href="basictags.html" target="_blank">HTML BasicTags</a></li>
+			  <li><a href="headings.html">HTML Headings</a></li>
+			  <li><a href="paragraph.html">HTML Paragraphs</a></li>
+			  <li><a href="formatting.html">HTML Formatting</a></li>
+			   <li><a href="comments.html">HTML Comments</a></li>
+			  <li><a href="background.html">HTML Background</a></li>
+			  <li><a href="images.html">HTML Images</a></li>
+			  <li><a href="table.html">HTML Table</a></li>
+			  <li><a href="list.html">HTML Lists</a></li>
+			  <li><a href="link.html">HTML Links</a></li>
+			  <li><a href="font.html">HTML Font</a></li>
+			  <li><a href="marquee.html">HTML Marquee</a></li>
+			  <li><a href="audio.html">HTML audio</a></li>
+			  <li><a href="video.html">HTML video</a></li>
+			  <li><a href="forms.html">HTML Forms</a></li>
+			  <li><a href="maintags.html">HTML MainTags</a></li>
+		  </ul>
+	 </nav>
+	 <section>
+	       <h1>HTML Introduction</h1>
+		   <ol>
+		   <li>HTML stands for Hyper Text Markup Language.</li>
+           <li>HTML is used to create static web pages.</li>
+           <li>HTML is widely used language on the web.</li>
+           <li>We can create static website by HTML only.</li>
+           <li>An HTML document is made of many HTML tags and each HTML tag contains different content.</li>
+           <li>Browsers do not display the HTML tags, but use them to render the content of the page.</li>
+           <li>You can use any text editor like notepad, notepad++, or Editplus etc.</li>
+		   </ol>
+		   <h1>HTML Synatx</h1>
+		   <ol>
+		      <li>An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+			  &lt;tagname&gt;Content goes here...&lt;/tagname&gt;.</li>
+              <li>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.</li>
+              <li>The HTML document itself begins with &lt;html&gt;and ends with &lt;/html&gt;.</li>
+              <li>Head tag represents the document's header and its start with &lt;head&gt; and close with &lt;/head&gt;.</li>
+              <li>The &lt;title&gt; tag is used inside the head tag to mention the document title.</li>
+              <li>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</li>
+		   </ol>
+<pre style="border:2px solid red">
+	<code>
+	   &lt;!DOCTYPE HTML&gt;
+	   &lt;html lang="en-US"&gt;
+	   &lt;head&gt;
+	   &lt;meta charset="UTF-8"&gt;
+	   &lt;title&gt;Your Title goes here&lt;/title&gt;
+	   &lt;/head&gt;
+	   &lt;body&gt;
+		your content goes here
+	   &lt;/body&gt;
+	   &lt;/html&gt;
+	</code>
+</pre>
+<h1>HTML BasicTags</h1>
+  <ol>
+	<li>&lt;br&gt; br stands for break line, it breaks the line of the code. It is useful for writing a poem or an address,
+			where the division of lines is significant.</li>
+    <li>&lt;pre&gt; tag represents preformatted text. Whitespace inside this element is displayed as typed.</li>
+    <li>&lt;code&gt; tag is used for indicating a piece of code. The code tag surrounds the code being marked 
+			up.The code being marked up could represent an XML element name, a filename, a computer program, 
+		    or any other string that a computer would recognize.</li>
+   </ol>
+<pre style="border:2px solid red;">
+    <code>
+		&lt;!DOCTYPE HTML&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;Programming Tutorials In Telugu&lt;/title&gt;
+        &lt;/head&gt;
+
+        &lt;body&gt;
+        &lt;pre&gt;
+				   
+            Text in a pre element
+            is displayed in a fixed-width
+            font, and it preserves
+            both spaces and  line breaks
+                     
+				   
+        &lt;/pre&gt;
+
+            This text contains&lt;br&gt;a line break.
+
+        &lt;code&gt;A piece of computer code&lt;/code&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+	</code>
+</pre>
+<h1>HTML Headings</h1>
+	<ol>
+	<li>A HTML heading or HTML h tag can be defined as a title or a subtitle which you want to display on the
+	    webpage. When you place the text within the heading tags it is displayed on the browser in the bold 
+	    format and size of the text depends on the number of heading.</li>
+    <li>There are six different HTML headings which are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</li>
+    <li>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading. Search engines use the 
+		headings to index the structure and content of your web pages.</li>
+	</ol>
+<pre style="border:2px solid red;">
+	<code>
+	   &lt;!DOCTYPE HTML&gt;
+       &lt;html&gt;
+       &lt;head&gt;
+       &lt;title&gt;Programming Tutorials In Telugu&lt;/title&gt;
+       &lt;/head&gt;
+
+       &lt;body&gt;
+       &lt;h1&gt;This is heading 1&lt;/h1&gt;
+       &lt;h2&gt;This is heading 2&lt;/h2&gt;
+       &lt;h3&gt;This is heading 3&lt;/h3&gt;
+       &lt;h4&gt;This is heading 4&lt;/h4&gt;
+       &lt;h5&gt;This is heading 5&lt;/h5&gt;
+       &lt;h6&gt;This is heading 6&lt;/h6&gt;
+				   
+       &lt;/body&gt;
+       &lt;/html&gt;
+	</code>
+</pre>
+<h1>HTML Paragraphs</h1>
+  <ol>
+	<li>HTML paragraph or HTML p tag is used to define a paragraph in a webpage.</li>
+    <li>It is a notable point that a browser itself add an empty line before and after a paragraph.</li>
+    <li>The HTML &lt;p&gt; element defines a paragraph.&lt;/li&gt;
+  </ol>
+<pre style="border:2px solid red;">
+  <code>
+	&lt;!DOCTYPE HTML&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Programming Tutorials In Telugu&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p&gt;This is another paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+  </code>
+</pre>
+<h1>HTML Formatting</h1>
+  <ol>
+    <li>HTML also defines special elements for defining text with a special meaning.</li>
+    <li>HTML uses elements like &lt;b&gt; and &lt;i&gt; for formatting output, like bold or italic text.</li>
+    <li>Formatting elements were designed to display special types of text.</li>
+  <ol>
+<pre style="border:2px solid red;">
+<code>
+  &lt;!DOCTYPE HTML&gt; 
+  &lt;html&gt; 
+  &lt;head&gt; 
+  &lt;title&gt; Programming Tutorials In Telugu &lt;/title&gt; 
+  &lt;/head&gt; 
+
+  &lt;body&gt; 
+  &lt;b&gt; This text is bold &lt;/b&gt; 
+  &lt;strong&gt; This text is strong &lt;/strong&gt; 
+  &lt;i&gt; This text is italic &lt;/i&gt; 
+  &lt;em&gt; This text is emphasized &lt;/em&gt; 
+  &lt;h2&gt; HTML  &lt;small&gt; Small &lt;/small&gt;  Formatting &lt;/h2&gt; 
+  &lt;h2&gt; HTML  &lt;mark&gt; Marked &lt;/mark&gt;  Formatting &lt;/h2&gt; 
+  &lt;p&gt; My favorite color is  &lt;del&gt; blue &lt;/del&gt;  red. &lt;/p&gt; 
+  &lt;p&gt; My favorite  &lt;ins&gt; color &lt;/ins&gt;  is red. &lt;/p&gt; 
+  &lt;p&gt; This is  &lt;sub&gt; subscripted &lt;/sub&gt;  text. &lt;/p&gt; 
+  &lt;p&gt; This is  &lt;sup&gt; superscripted &lt;/sup&gt;  text. &lt;/p&gt; 
+  &lt;/body&gt; 
+  &lt;/html&gt; 
+</code>
+</pre>
+<h1>HTML Background</h1>
+<ol>
+  <li>These are the attributes to change web page looking.</li>
+  <li>Attributes are used inside a tag and it follows att_name="value" format. Ex : text="red".</li>
+  <li>bgcolor attribute is used to change the background-color in a web page..</li>
+  <li>text attribute is used to change the text color in a web page..</li>
+  <li>background attribute is used to set an image as a background in a web page. Here we have to give the 
+	whole image url with extension..</li>
+</ol>
+<pre style="border:2px solid red;">
+<code>
+	&lt;!DOCTYPE HTML&gt; 
+    &lt;html&gt; 
+	&lt;head&gt; 
+	&lt;title&gt; Programming Tutorials In Telugu&lt;/title&gt; 
+	&lt;/head&gt; 
+
+	&lt;body bgcolor="red" text="white"&gt; 
+		Hello Welcome To HTML Tutorials
+	&lt;/body&gt; 
+	&lt;/html&gt; 
+	&lt;/code&gt; 
+</code>
+</pre>
+<pre style="border:2px solid red;">
+<code>
+	&lt;!DOCTYPE HTML&gt; 
+	&lt;head&gt; 
+	&lt;titleP&gt; rogramming Tutorials In Telugu&lt;/title&gt; 
+	&lt;/head&gt; 
+
+	&lt;body background="html1.png" text="yellow"&gt; 
+		Hello Welcome To HTML Tutorials
+	&lt;/body&gt; 
+	&lt;/html&gt; 
+</code>
+</pre>
+<h1>HTML Images</h1>
+<ol>
+ <li>You can insert any image in your web page by using &lt;img&gt; tag.</li>
+ <li>The simple syntax to use this tag is &lt;img src="Image URL" ... attributes-list/&gt;</li>
+ <li>The src attribute is used to give the address of the image with extension.</li>
+ <li>The alt attribute is a mandatory attribute which specifies an alternate text for an image, 
+	    if the image cannot be displayed.</li>
+ <li>You can set image width and height based on your requirement using&n width and height attributes.</li>
+ <li>By default image will have a border around it, you can specify border thickness in terms of pixels/value
+	    using border attribute. A thickness of 0 means, no border around the picture.</li>
+ <li>By default image will align at the left side of the page, but you can use align 
+	    attribute to set it in the center or right.</li>
+</ol>
+<pre style="border:2px solid red;">
+<code>
+	&lt;!DOCTYPE HTML&gt; 
+    &lt;html&gt; 
+    &lt;head&gt; 
+    &lt;title&gt; Programming Tutorials In Telugu&lt;/title&gt; 
+    &lt;/head&gt; 
+
+    &lt;body&gt; 
+    &lt;img src="html.png" alt="HTML5" height="200" width="250"&gt; 
+    &lt;img src="css3.png" alt="css3" height="200" width="250"&gt; 
+    &lt;/body&gt; 
+    &lt;/html&gt; 
+</code>
+</pre>
+
+</section>
+<footer>&copy; by sajid</footer>
+</div>
+</body>
+</html>

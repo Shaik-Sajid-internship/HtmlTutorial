@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+	div.container{
+	    width:100%;
+	    border:1px solid black;
+	    font-size:20px;
+	}
+	</style>
+</head>
+<body>
+<div class="container">
+<h1>HTML Forms</h1>
+<ol>
+	<li>HTML Forms are required when you want to collect some data from the site visitor.
+	    For example during user registration you would like to collect information such as name,
+	    email address, credit card, etc.</li>
+    <li>There are various form elements available like text fields, textarea fields, drop-down menus,
+     	radio buttons, checkboxes, etc.</li>
+    <li>The HTML &lt;form&gt; tag is used to create an HTML form.</li>
+    <li>Apart from common attributes, following is a list of the most frequently used form attributes:</li>
+           action Backend script ready to process your passed data.
+           method Method to be used to upload data. The most frequently used are GET and POST methods.
+           target Specify the target window or frame where the result of the script will be displayed.
+     	   It takes values like _blank, _self, _parent etc.
+    <li>There are different types of form controls that you can use to collect data using HTML form:</li>
+       Those are:
+       Single-line text input controls &lt;input type="text" name="name"/&gt;<br/>
+       Password input controls &lt;input type="password" name="pwd" /&gt;<br/>
+       Email input controls &lt;input type="email" name="email" /&gt;<br/>
+       Number input controls &lt;input type="number" name="number" /&gt;<br/>
+       Date input controls &lt;input type="date" name="date" /&gt;<br/>
+       Multi-line input controls &lt;textarea rows="5" cols="50" name="description"/&gt;<br/>
+       Checkbox controls &lt;input type="checkbox" name="m1" /&gt;<br/>
+       Radio Button controls &lt;input type="radio" name="male" /&gt;<br/>
+       Select Box controls &lt;select name="select" >&lt;option value="Maths">Maths&lt;/option&gt;<br/>
+       File upload box &lt;input type="file" name="fileupload" accept="image/*" /&gt;<br/>
+       Button controls &lt;input type="submit" name="submit" value="Submit" /&gt;<br/>
+       &lt;input type="reset" name="reset" value="Reset" /&gt;<br/>
+       &lt;input type="button" name="ok" value="OK" /&gt;<br/>
+       &lt;input type="image" name="imagebutton" src="/html/images/logo.png" /&gt;<br/>
+       &lt;input type="color" name="color" /&gt;<br/>
+       search &lt;input type="search" name="search" /&gt;<br/>
+       url &lt;input type="url" name="url" /&gt;<br/>
+    <li>Some attributes of form controls size, maxlength, checked, multiple, placeholder, value, pattern</li>
+</ol>
+<pre style="border:2px solid red;">
+<code>
+	&lt;!DOCTYPE HTML&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Programming Tutorials In Telugu</title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+    &lt;form action="html.html" method="get" target="_self"&gt;
+    Name: &lt;input type="text" name="fname">&lt;br&gt;&lt;br&gt;
+    Password: &lt;input type="password" name="pwd"&gt;&lt;br&gt;&lt;br&gt;
+    Email: &lt;input type="email" name="email"&gt;
+    Phone Number:&lt;input type="number" name="number"&gt;
+    DOB:&lt;input type="date" name="date"&gt; 
+    Address:&lt;textarea rows="5" cols="50" name="description"&gt;
+    &lt;/textarea&gt;
+    Hobbies:&lt;input type="checkbox" name="m1"&gt;
+    Gender:&lt;input type="radio" name="male"&gt;
+    Branch:&lt;select name="select" &gt;&lt;option value="cse"&gt;CSE&lt;/option&gt;
+    Photo:&lt;input type="file" name="fileupload" accept="image/*"&gt;
+    Search:&lt;input type="search" name="search"&gt;
+    url: &lt;input type="url" name="url"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+    &lt;input type="reset" name="reset" value="Reset"&gt; 
+    &lt;input type="button" name="ok" value="OK"&gt;
+    &lt;input type="color" name="color"&gt; 
+    &lt;/form&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code>
+</pre>
+</div>	
+</body>
+</html>
